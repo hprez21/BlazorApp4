@@ -1,0 +1,25 @@
+﻿@page "/"
+
+@*Page Title*@
+<PageTitle>Index</PageTitle>
+
+@*Head Content*@
+<HeadContent>
+    <meta name="description" content=".NET CONF"/>
+</HeadContent>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@*Error Boundaries*@
+<ErrorBoundary>
+    <ChildContent>
+        <Counter CurrentCount=5/>
+    </ChildContent>
+    <ErrorContent>
+        <div class="text-danger">Has sobrepasado el límite!</div>
+    </ErrorContent>
+</ErrorBoundary>
